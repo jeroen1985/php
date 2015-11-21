@@ -9,10 +9,8 @@ class calc {
 	}
 	
 	protected function sum(){
-
-	$total = $this->a+$this->b; 
-	
-	return $total;
+		$total = $this->a+$this->b; 
+		return $total;
 	}
 
 }
@@ -20,14 +18,13 @@ class calc {
 class childcalc extends calc{
 
 	function __construct($a,$b,$c){
-	 parent::__construct($a,$b);
+		parent::__construct($a,$b);
 		$this->c=$c;
         }	
 
 	public function sumPublic(){
-	
-	$total=$this->sum()+$this->c;
-	return $total;
+		$total=$this->sum()+$this->c;
+		return $total;
 	}
 
 }
