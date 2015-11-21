@@ -8,10 +8,8 @@ echo $firstNumber;
 echo $successor;
 
 for ($i=0; $i < $amount; $i++){
- 	$current=$firstNumber+$successor;
-
+	$current=$firstNumber+$successor;
 	echo "/n".$current;
-	
 	$firstNumber = $successor;
 	$successor = $current;
 }
